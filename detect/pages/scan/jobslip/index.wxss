@@ -1,0 +1,12 @@
+@import '../../../dist/mydialog.wxss';
+
+.photo{
+width: 100%; 
+height: 835rpx;
+}
+
+.infoarea{
+  font-size: 35rpx;
+  margin: 15rpx auto;
+}
+

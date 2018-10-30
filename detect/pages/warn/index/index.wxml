@@ -1,0 +1,19 @@
+<view class="container">
+  <view>
+    <text class="text-title"></text>
+  </view>
+
+  <view class="weui-cell__hd" style="position: relative;margin:60rpx 170rpx;">
+    <button bind:tap="recvAbsenceInfo" class="weui-btn" type='primary'>未签到人员名单</button>
+
+  </view>
+
+  <view class="weui-loadmore weui-loadmore_line">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line"></view>
+  </view>
+
+  <view class="weui-cell__hd" style="position: relative;margin:15rpx 170rpx;">
+    <button bindtap="sendWarnInfo" class="weui-btn" type="primary">违规警告</button>
+  </view>
+
+</view>

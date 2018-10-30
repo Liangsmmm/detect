@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/user/index/index",
+    "pages/warn/index/index",
+    "pages/scan/jobslip/index",
+    "pages/scan/index/index",
+    "pages/scan/id/index",
+    "pages/user/about/index",
+    "pages/user/feedback/index",
+    "pages/user/center/index",
+    "pages/user/face/index",
+    "pages/user/login/index",
+    "pages/user/register/index",
+    "pages/warn/absence/index",
+    "pages/warn/send/index/index",
+    "pages/warn/send/create/index",
+    "pages/warn/receive/index",
+    "pages/slide/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "违规检测",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/warn/index/index",
+        "iconPath": "icons/warn2.png",
+        "selectedIconPath": "icons/warn1.png",
+        "text": "违规"
+      },
+      {
+        "pagePath": "pages/scan/index/index",
+        "iconPath": "icons/scan2.png",
+        "selectedIconPath": "icons/scan1.png",
+        "text": "扫描"
+      },
+      {
+        "pagePath": "pages/user/index/index",
+        "iconPath": "icons/account2.png",
+        "selectedIconPath": "icons/account1.png",
+        "text": "用户"
+      }
+    ]
+  }
+}

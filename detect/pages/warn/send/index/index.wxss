@@ -1,0 +1,42 @@
+/* pages/note/list.wxss */
+
+
+.note-add {
+  position: fixed;
+  left: 50%;
+  bottom: 60rpx;
+  width: 90rpx;
+  height: 90rpx;
+  margin-left: -45rpx;
+  border-radius: 50%;
+  font-size: 60rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: #444;
+  z-index: 10;
+}
+
+
+.show-warn-panel{
+  border-bottom: 1rpx solid #ccc;  
+}
+
+.warn-panels{
+  margin-top: 100rpx;
+}
+
+
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}

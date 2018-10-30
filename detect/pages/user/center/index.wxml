@@ -1,0 +1,28 @@
+<!--pages/user/center/index.wxml-->
+
+<view class='container'>
+  <view class="doc-title zan-hairline--bottom">个人中心</view>
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <view class='head_pic' bindtap="openActionSheet">
+        <image src="{{account_avatar}}"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">修改需要联系管理员</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">用户手机</view>
+      <view class="weui-cell__ft">{{account_tel}}</view>
+    </view>
+  </view>
+  <view class="button-sp-area">
+    <navigator>
+      <button bind:tap="quitBtnClick" class="weui-btn mini-btn" type="default" plain='true' size="mini">退出登录</button>
+    </navigator>
+    <navigator open-type='navigate' url="../face/index">
+      <button class="weui-btn mini-btn" type="default" plain='true' size="mini">人脸签到</button>
+    </navigator>
+  </view>
+</view>

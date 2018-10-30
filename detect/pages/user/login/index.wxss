@@ -1,0 +1,25 @@
+.text-title{
+  height: 120rpx;
+  font-size: 45rpx;
+  color:#11AA11;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40rpx auto;
+}
+
+
+.goRegister{
+  height: 0rpx; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  align-items: center;
+  color: blue;
+  margin-top: 70rpx;
+}
+
+.login-btn{
+    margin: 70rpx 30rpx;
+}

@@ -1,0 +1,19 @@
+<view class="container">
+  <view>
+    <text class="text-title"></text>
+  </view>
+
+  <view class="weui-cell__hd" style="position: relative;margin:60rpx 170rpx;">
+    <button bindtap="addDeviceInfo" class="weui-btn" type='primary'>身份证录入</button>
+    <!--<view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">9条新消息</view>-->
+  </view>
+
+   <!--<view class="weui-loadmore weui-loadmore_line">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line"></view>
+  </view>
+
+ <view class="weui-cell__hd" style="position: relative;margin:15rpx 170rpx;">
+    <button bindtap="addDeviceInfo" class="weui-btn" type="primary">作业票检测</button>
+  </view>-->
+
+</view>

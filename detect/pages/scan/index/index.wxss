@@ -1,0 +1,11 @@
+.text-title{
+  height: 120rpx;
+  font-size: 45rpx;
+  color:#11AA11;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100rpx auto;
+}
+

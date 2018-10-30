@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="container box">
+
+  <view class="userinfo">
+    <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+    <open-data type="userNickName" class="userinfo-nickname"></open-data>
+  </view>
+
+  <view class="weui-cells__title">用户</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_access" data-redirect="../center/index" bind:tap="listOnClick">
+      <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">个人中心</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+
+    <view class="weui-cell weui-cell_access" data-redirect="../face/index" bind:tap="listOnClick">
+      <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">人脸签到</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+
+    <view class="weui-cell weui-cell_access" data-redirect="../qr/index" bind:tap="listOnClick">
+      <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">扫码签到</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+
+  <view class="weui-cells__title">
+    <text>\n</text>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_access" data-redirect="../about/index" bind:tap="listOnClick">
+      <view class="weui-cell__bd">
+        <view style="display: inline-block; vertical-align: middle">版本记录</view>
+        <block wx:if="{{aboutDot}}">
+          <view class="weui-badge" style="margin-left: 5px;">New</view>
+        </block>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd" data-redirect="../feedback/index" bind:tap="listOnClick">意见反馈</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+
+        <block wx:if="{{feedBackDot}}">
+          <view class="weui-badge weui-badge_dot" style="margin-left: 5px;margin-right: 5px;"></view>
+        </block>
+
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view class="weui-footer weui-footer_fixed-bottom">
+      <view class="weui-footer__text">Power By liangsmm@vip.qq.com</view>
+    </view>
+  </view>
+</view>

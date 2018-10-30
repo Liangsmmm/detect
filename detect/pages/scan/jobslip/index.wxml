@@ -1,0 +1,61 @@
+<!--pages/user/face/index.wxml-->
+
+<view class='container'>
+  <view class="doc-title zan-hairline--bottom">人脸签到</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">提示</view>
+  <view class="modal-content">
+    <view>人脸签到需要获取相机和位置权限，是否允许？</view>
+  </view>
+  <view class="modal-footer">
+    <button class="btn-cancel" bindtap="onCancel" data-status="cancel">拒绝</button>
+    <button open-type="openSetting" bindopensetting="getAuthorize" class="btn-confirm"  data-status="confirm">允许</button>
+  </view>
+</view>
+<!--弹窗-->
+
+  <view class="page-body">
+    <view class="page-body-wrapper">
+
+
+      <view wx:if="{{!hasTakePhoto&&!showModal}}">
+        <camera device-position="front" flash="off" binderror="takePhotoError" class='photo'></camera>
+      </view>
+      <view wx:else>
+        <image mode="widthFix" src="{{src}}" class='photo'></image>
+      </view>
+
+      <view class="btn-area">
+       
+          <button  type="primary" disabled='{{disable}}' bindtap="takePhoto">{{ !hasTakePhoto && '拍摄人脸' || '重新拍摄' }}</button>
+        
+
+      </view>
+    </view>
+  </view>
+
+
+  <!--<view class='infoarea'>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">目标</view>
+        <view class="weui-cell__ft">{{destination}}</view>
+      </view>
+
+      <view class="weui-cell">
+        <view class="weui-cell__bd">当前</view>
+        <view class="weui-cell__ft">{{currentPos}}</view>
+      </view>
+
+      <view class="weui-cell">
+        <view class="weui-cell__bd">距离</view>
+        <view class="weui-cell__ft">{{distance}}</view>
+      </view>
+
+    </view>
+
+  </view>-->
+</view>

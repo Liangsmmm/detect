@@ -1,0 +1,26 @@
+.head_pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.head_pic image {
+  margin: 20rpx auto;
+  width: 300rpx;
+  height: 285rpx;
+}
+
+.account {
+  margin-top: 50rpx;
+}
+
+.button-sp-area {
+  display: flex;
+  margin: 150rpx;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  margin: 0 10%;
+}

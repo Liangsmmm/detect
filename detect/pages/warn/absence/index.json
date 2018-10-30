@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "未签到人员名单",
+  "usingComponents": {
+    "slide-delete": "../../../components/slide-delete/slide-delete"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "违规警告",
+
+  "usingComponents": {
+    "slide-delete": "../../../../components/slide-delete/slide-delete"
+  }
+  
+    
+ 
+  
+}

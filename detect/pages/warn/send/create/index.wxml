@@ -1,0 +1,54 @@
+<!--pages/....../create.wxml-->
+<view class='container'>
+
+  <view class="weui-cells__title">添加违规信息</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">发布时间</view>
+      <view class="weui-cell__ft">{{sendTime}}</view>
+    </view>
+
+    <view class="weui-cell">
+      <view class="weui-cell__bd">发布人</view>
+      <view class="weui-cell__ft">{{sendPerson}}</view>
+    </view>
+
+
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">选择类型</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindWarnTypeChange" value="{{warnIndex}}" range="{{warnTypes}}">
+          <view style="text-align:right" class="weui-select weui-select_in-select-after">
+          {{warnTypes[warnIndex]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="self-define" wx:if="{{isDefine}}">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" maxlength='30'  bindinput="defineWarnContent" placeholder="请输入自定义违规警告信息" style="height: 3.3em" auto-height/>
+            <view class="weui-textarea-counter">{{warnContent.length}}/30</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+
+
+
+
+
+  <view class="fixed-bottom">
+    <view class="button-group">
+      <button class="button" bindtap="handleCancelTap">取消</button>
+      <button class="button button-primary" bindtap="SaveInfoClick">保存</button>
+    </view>
+  </view>
+
+</view>

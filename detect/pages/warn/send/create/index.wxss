@@ -1,0 +1,33 @@
+/* pages/note/create.wxss */
+
+
+
+.button {
+  display: inline-block;
+  flex: 1;
+  border: 1px solid #fff;
+  border-radius: 0;
+  border-image: none;
+  box-shadow: none;
+  background-color: #fff;
+  font-size: 32rpx;
+}
+
+.button-primary {
+  background-color: #11AA11;
+  border: 1px solid #11AA11;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+}
+
+.fixed-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}

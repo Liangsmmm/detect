@@ -1,0 +1,45 @@
+<view class="page container">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="navBarClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+
+      </view>
+      <scroll-view scroll-y bindscrolltolower="scrollToLower" class="weui-tab__panel">
+        <block wx:for="{{warnInfos}}" wx:key="uuid" wx:for-item="warnInfo">
+          <view hidden="{{activeIndex != warnInfo.hasSolve}}">
+            <view class="show-warn-panel">
+              <view class="weui-panel">
+                <view    data-warnInfo="{{warnInfo}}">
+                  <view class="weui-panel__bd">
+                    <view class="weui-media-box weui-media-box_text">
+                      <view class="weui-media-box__title weui-media-box__title_in-text"></view>
+                      <view class="weui-media-box__desc">
+                        {{'编号_'+warnInfo.id+': '}}
+                        {{warnInfo.warnType == "自定义" && warnInfo.warnContent ||  warnInfo.warnType}}
+                      </view>
+                      <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">
+                          <view class="weui-media-box__info__meta">{{warnInfo.sendTime}}</view>
+                        </view>
+                      </view>
+                      </view>
+                    </view>
+                  </view>
+
+               
+              </view>
+            </view>
+          </view>
+
+        </block>
+
+      </scroll-view>
+    </view>
+  </view>
+  <view wx:if="{{hasAddPower == 1}}" class="note-add" bindtap="handleAddNote">+</view>
+</view>
